@@ -1,0 +1,136 @@
+#VinculoTop{
+	text-decoration: none;
+	color: #111111;
+}
+body{
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: #fff;
+}
+
+footer {
+	border-radius: 4px;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #91BFFF;
+	height: 30px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+header {
+	border-radius: 4px;
+	text-align: center;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	background-color: #91BFFF;
+	height: 60px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#IrArriba {
+	width: 60px;
+	position: fixed;
+	bottom: 0px; /* Distancia desde abajo */
+	right: 15px; /* Distancia desde la derecha */
+	font-size: 15px;
+	text-align: center;
+	border-top: 1px solid #96d1f8;
+	background: #317db0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#317db0));
+	background: -webkit-linear-gradient(top, #3e779d, #317db0);
+	background: -moz-linear-gradient(top, #3e779d, #317db0);
+	background: -ms-linear-gradient(top, #3e779d, #317db0);
+	background: -o-linear-gradient(top, #3e779d, #317db0);
+	padding: 7.5px 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #ffffff;
+}
+
+table {
+border-collapse: collapse;
+/*border: 2px solid #000;*/
+font: normal 80%/140% arial, helvetica, sans-serif;
+color: #555;
+width: 100%;
+background: #fff;
+}
+
+td, th {border: 1px dotted #bbb;
+padding: .5em;}
+
+caption {padding: 0 0 .5em 0;
+text-align: left;
+font-size: 1.4em;
+font-weight: bold;
+text-transform: uppercase;
+color: #333;
+background: transparent;}
+
+/* =links
+----------------------------------------------- */
+
+table a {padding: 1px;
+text-decoration: none;
+font-weight: bold;
+background: transparent;}
+
+table a:link {border-bottom: 1px dashed #ddd;
+color: #000;}
+
+table a:visited {border-bottom: 1px dashed #ccc;
+text-decoration: line-through;
+color: #808080;}
+
+table a:hover {border-bottom: 1px dashed #bbb;
+color: #666;}
+
+/* =head =foot
+----------------------------------------------- */
+
+thead th, tfoot th {border: 2px solid #000;
+text-align: left;
+font-size: 1.2em;
+font-weight: bold;
+color: #333;
+background: transparent;}
+
+tfoot td {border: 2px solid #000;}
+
+/* =body
+----------------------------------------------- */
+
+tbody th, tbody td {vertical-align: top;
+text-align: center;}
+
+tbody th {white-space: nowrap;}
+
+.odd {background: #fcfcfc;}
+
+tbody tr:hover {background: #DBE4EA;}
+
+
+/*#res_med{	
+	width:100%;
+	margin-top: 10px;
+}
+
+#res_institucion{
+	width:30%;
+	margin-top: 10px;
+	margin-right: 10px;
+}*/

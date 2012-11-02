@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block section %}
+{% load humanize %}
+
+<section id="resumen">
+	<table>
+		<tr>
+		<td>
+		<article id="res_med">
+			<table>
+				<tr>
+					<th>Codigo de medico</th>
+					<th>Nombre del medico</th>
+					<th>Tipo de medico</th>
+					<th>Total</th>			
+				</tr>
+				{% for lst in lista %}
+					<tr>
+						<td>
+							{{lst.medico_cod}}
+						</td>
+						<td>
+							{{lst.medico_des}}
+						</td>
+						<td>
+							{{lst.tipo_medico}}
+						</td>
+						<td>
+							{{lst.Total}}
+						</td>				
+					</tr>
+				{% endfor %}
+			</table>
+		</article>
+		</td>
+		<td>
+		<article id="res_institucion">
+			<table>
+				<tr>
+					<th>Institucion</th>
+					<th>Sector</th>
+					<th>Total</th>			
+				</tr>
+				{% for item in institucion %}
+					<tr>
+						<td>
+							{{item.institucion}}
+						</td>
+						<td>
+							{{item.sector}}
+						</td>
+						<td>
+							{{item.Total}}
+						</td>				
+					</tr>
+				{% endfor %}
+			</table>
+		</article>
+		</td>
+		</tr>
+	</table>
+</section>
+
+{% endblock %}

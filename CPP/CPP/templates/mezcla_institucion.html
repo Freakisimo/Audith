@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block section %}
+{% load humanize %}
+<section >
+	<table>
+		{% for key,value in lista.items %}
+			{% if key = 1 %}					
+				<tr>
+					<th>Folio</th>
+						{% for key,value in value.items  %}
+							<th>{{ key }}</th>
+						{% endfor %}
+				</tr>
+			{% endif %}
+		{% endfor %}
+
+		{% for key,value in lista.items %}
+			<tr>
+				<td>{{ key }}</td>
+					{% for key,value in value.items  %}
+						{% if value > 0 %}
+							<td>{{ value|floatformat }}</td>
+						{% else %}
+							<td>0</td>
+						{% endif %}
+					{% endfor %}
+			</tr>
+		{% endfor %}
+	</table>
+</section>
+	
+{% endblock %}
+

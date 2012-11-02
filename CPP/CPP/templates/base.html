@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="es-MX">
+<head>
+	<meta charset="UTF-8">
+	<title>Audith</title>
+	{% load static %}
+	{% get_static_prefix as STATIC_PREFIX %}
+
+	<link rel="stylesheet" href="{{ STATIC_PREFIX }}css/style.css">
+
+	<!-- Este es el codigo del menu -->	
+	<!-- Start css3menu.com HEAD section -->
+	<link rel="stylesheet" href="{{ STATIC_PREFIX }}css/style_menu.css" type="text/css" />
+	<style>._css3m{display:none}</style>
+	<!-- End css3menu.com HEAD section -->
+
+	<!-- Start css3menu.com HEAD section -->
+	<link rel="stylesheet" href="{{ STATIC_PREFIX }}img/style.css" type="text/css" />
+	<!-- End css3menu.com HEAD section -->
+
+	<script type="text/javascript" src='{{ STATIC_PREFIX }}js/jquery.js'></script>
+
+	<script><!-- Esto es importante -->
+		//<![CDATA[
+		// Botón para Ir Arriba
+		jQuery.noConflict();
+		jQuery(document).ready(function() {
+		jQuery("#IrArriba").hide();
+		jQuery(function () {
+		jQuery(window).scroll(function () {
+
+		if (jQuery(this).scrollTop() > 200) {
+				jQuery('#IrArriba').fadeIn();
+			} else {
+				jQuery('#IrArriba').fadeOut();
+			}
+		});
+		jQuery('#IrArriba a').click(function () {
+		jQuery('body,html').animate({
+			scrollTop: 0
+			}, 800);
+		return false;
+		});
+		});
+
+		});
+		//]]>
+	</script>
+
+</head>
+<body>
+
+<header>
+	<h1>Revisión de folios Onco audith</h1>	
+</header>
+
+	<ul id="css3menu1" class="topmenu">
+		<li class="topfirst"><a href="{{ STATIC_PREFIX }}../inicio" style="height:17px;line-height:17px;">Inicio</a></li>
+		<li class="topmenu"><a href="#" style="height:17px;line-height:17px;"><span>Validaciones</span></a>
+	<ul>
+			<li class="subfirst"><a href="{{ STATIC_PREFIX }}../mezcla_institucion">Folios por institucion</a></li>
+			<li><a href="{{ STATIC_PREFIX }}../medicos_residentes">Medicos adscritos</a></li>
+			<li><a href="#">Esquemas de tratamiento</a></li>
+			<li><a href="#"><span>Campos vacios</span></a>
+			<ul>
+				<li class="subfirst"><a href="{{ STATIC_PREFIX }}../numero_pacientes">Numero de pacientes</a></li>
+				<li><a href="{{ STATIC_PREFIX }}../folio_paciente">Folio de paciente</a></li>
+				<li><a href="{{ STATIC_PREFIX }}../dx_1">DX_1</a></li>
+				<li><a href="{{ STATIC_PREFIX }}../dx_2">DX_2</a></li>
+				<li><a href="#">Esquema de tratamiento</a></li>
+			</ul></li>
+		</ul></li>
+		<li class="topmenu"><a href="#" style="height:17px;line-height:17px;"><span>Cierre de data</span></a>
+		<ul>
+			<li class="subfirst"><a href="#">Validacion de folios capturados</a></li>
+			<li><a href="#">Proceso de cierre</a></li>
+		</ul></li>
+		<li class="toplast"><a href="#" style="height:17px;line-height:17px;">Salir</a></li>
+	</ul><p class="_css3m"><a href="http://css3menu.com/">Vertical CSS Menu Generator Css3Menu.com</a></p>
+	<!-- End css3menu.com BODY section -->
+
+<br/>
+<br/>
+
+{% block section %}
+	
+	
+	
+{% endblock %}
+<footer>Audith CPP</footer>
+
+<div id='IrArriba'>
+<a href='#Arriba' id='VinculoTop'>Ir arriba</a>
+</div>
+
+</body>
+</html>

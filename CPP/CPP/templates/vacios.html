@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block section %}
+{% load humanize %}
+
+<section >
+	<table>
+		<tr>
+			<th>Folio</th>
+			<th>Fecha</th>
+			<th>Nombre del medico</th>
+			<th>Institucion</th>
+			<th>Hospital</th>
+			<th>Usuario</th>
+			<th>Numero de pacientes</th>
+			<th>Paciente</th>
+			<th>N</th>
+			<th>DX 1</th>
+			<th>Esquema</th>
+		</tr>
+		{% for item in lista %}
+			<tr>
+				<td>
+					{{item.folio}}
+				</td>
+				<td>
+					{{item.fecha|date:'b-Y'}}
+				</td>
+				<td>
+					{{item.medico_des}}
+				</td>
+				<td>
+					{{item.institucion}}
+				</td>
+				<td>
+					{{item.hospital}}
+				</td>
+				<td>
+					{{item.usuario}}
+				</td>
+				<td>
+					{{item.num_pacientes}}
+				</td>
+				<td>
+					{{item.paciente}}
+				</td>				
+				<td>
+					{{item.n}}
+				</td>
+				<td>
+					{{item.dx_1}}
+				</td>
+				<td>
+					{{item.esquema_tx}}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+</section>
+	
+{% endblock %}
+
